@@ -1,0 +1,160 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow:0 0 1px;
+    text-rendering:optimizeLegibility;
+    line-height:24px;
+    color: rgb(19, 1, 1);
+    
+}
+body {
+    background: url("C:Users/Edi/Desktop/ProiectTw/resources/background.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+
+    
+}
+.mainTitle{
+ 
+    text-align: center;
+    border:5px solid black;
+    background-color: rgb(255, 255, 255);
+}
+.paragraphs{
+    letter-spacing: normal;
+    background-color:rgb(255, 255, 255);
+    border: 3px solid black;
+}
+.secondTitle{
+    width: fit-content;
+    background-color:rgb(255, 255, 255);
+    border: 4px solid black;
+    text-align: center;
+}
+
+#headMacro{
+    display:flex;
+    align-items: flex-start;
+}
+
+.imageContainer1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ 
+}
+.imageContainer2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.imageContainer3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border:3px solid black;
+}
+#middleElement{
+    width: fit-content;
+    background-color:rgb(255, 255, 255);
+    border: 2px solid black;
+    text-align: center;
+}
+#firstElement{
+    width: fit-content;
+    background-color:rgb(255, 255, 255);
+    border: 2px solid black;
+    text-align: center;    
+    
+}
+#lastElement{
+    width: fit-content;
+    background-color:rgb(255, 255, 255);
+    border: 2px solid black;
+    text-align: center;  
+}
+
+@media (max-width: 990px) {
+    .menu {
+        width: 100%;
+    }
+    .page-grid {
+        display: block;
+    }
+    .footer {
+        border-radius: 0;
+    }
+    .img {
+        width: calc(33% - 10px);
+        height:10 px;
+        border:3px solid black;
+    }
+    .paragraphs{
+        width:100%;
+        font-size: large;
+    }
+    .secondTitle{
+        width:100%;
+    }
+    .imageContainer1{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+    .imageContainer2{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+
+    }
+    .imageContainer3{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+       
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: none;
+    }
+    .header {
+        display: none;
+    }
+    .footer {
+        margin-top: 3px;
+    }
+    img {
+        width:100%;
+    }
+    .paragraphs{
+        width:100%;
+        font-family:"Papyrus", fantasy;
+    }
+    .secondTitle{
+        width:100%;
+    }
+    .imageContainer1{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .imageContainer2{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .imageContainer3{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+ 
+}
